@@ -155,6 +155,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service \
     vendor/realme/sm6125-common/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/realme/sm6125-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
+    vendor/realme/sm6125-common/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.face@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.face@1.0-service \
+    vendor/realme/sm6125-common/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service \
+    vendor/realme/sm6125-common/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service \
     vendor/realme/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/realme/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/realme/sm6125-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.0-service \
@@ -249,6 +252,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/realme/sm6125-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/realme/sm6125-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/realme/sm6125-common/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.face@1.0-service.rc \
+    vendor/realme/sm6125-common/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc \
+    vendor/realme/sm6125-common/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service.rc \
     vendor/realme/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/realme/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/realme/sm6125-common/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
@@ -264,6 +270,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/realme/sm6125-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/realme/sm6125-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/realme/sm6125-common/proprietary/vendor/etc/permissions/vendor-oppo-hardware.biometrics.fingerprintpay.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-oppo-hardware.biometrics.fingerprintpay.xml \
     vendor/realme/sm6125-common/proprietary/vendor/etc/sensors/config/ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_0.json \
     vendor/realme/sm6125-common/proprietary/vendor/etc/sensors/config/bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi160_0.json \
     vendor/realme/sm6125-common/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
@@ -353,6 +360,15 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
     vendor/realme/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/realme/sm6125-common/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/realme/sm6125-common/proprietary/vendor/firmware/f_1511.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b00 \
+    vendor/realme/sm6125-common/proprietary/vendor/firmware/f_1511.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b01 \
+    vendor/realme/sm6125-common/proprietary/vendor/firmware/f_1511.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b02 \
+    vendor/realme/sm6125-common/proprietary/vendor/firmware/f_1511.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b03 \
+    vendor/realme/sm6125-common/proprietary/vendor/firmware/f_1511.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b04 \
+    vendor/realme/sm6125-common/proprietary/vendor/firmware/f_1511.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b05 \
+    vendor/realme/sm6125-common/proprietary/vendor/firmware/f_1511.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b06 \
+    vendor/realme/sm6125-common/proprietary/vendor/firmware/f_1511.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b07 \
+    vendor/realme/sm6125-common/proprietary/vendor/firmware/f_1511.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.mdt \
     vendor/realme/sm6125-common/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/realme/sm6125-common/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
     vendor/realme/sm6125-common/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
@@ -360,6 +376,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/realme/sm6125-common/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/realme/sm6125-common/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/realme/sm6125-common/proprietary/vendor/lib/android.frameworks.faceservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.faceservice@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/android.hardware.sensors@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0-impl.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
@@ -411,6 +428,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib/libalipay_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalipay_factory.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
@@ -437,6 +455,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcpsrm.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib/libhypnusclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypnusclient.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
@@ -473,6 +492,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmp.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib/librpmbengclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmbengclient.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
@@ -484,6 +504,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_qtiflacdec.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib/libstfaceunlockocl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstfaceunlockocl.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
@@ -525,7 +546,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.oppo.hardware.biometrics.face@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.biometrics.face@1.0.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.commondcs@1.0.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.hypnus@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.oppo.hardware.radio.opporadio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.radio.opporadio@1.0.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.0.so \
@@ -535,6 +560,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.power.pasrmanager@1.0.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/android.frameworks.fingerprintservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.fingerprintservice@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/android.hardware.sensors@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.0-impl.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -602,6 +628,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSDriver_adreno.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRbsFlow.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libSubSystemShutdown.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSubSystemShutdown.so \
@@ -612,6 +639,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/libalipay_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalipay_factory.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaoa.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
@@ -649,6 +677,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/libhypnusclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypnusclient.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
@@ -719,6 +748,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/librpmbengclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmbengclient.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno_sha1.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
@@ -772,6 +802,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.commondcs@1.0.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.hypnus@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
@@ -795,6 +830,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
+    vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/realme/sm6125-common/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
