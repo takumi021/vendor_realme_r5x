@@ -1,0 +1,333 @@
+<!--
+  Copyright (c) 2018 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!--
+CommonChromatixInfo:
+    CommonChromatixInfo is the information about chromatix needed for
+        various use cases.
+    Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+        3A and SW PostProc.
+    Entries in this node are common for all sensor modes.
+
+ResolutionChromatixInfo:
+    ResolutionChromatixInfo is the information about chromatix needed for
+        various use cases.
+    Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+        3A and SW PostProc.
+    Entries in this node are specific to sensor resolution.
+
+ChromatixName:
+    Contains the list of chromatix names for all modules.
+    special_mode_mask:
+        It is the bit mask for special modes, which is used for
+            chromatix selection.
+        Special modes can be any mode that needs a special chromatix.
+        Ex:- scene mode, DZOOM mode, OIS capture mode, flash mode
+        This is applicable for CommonChromatixInfo and
+            ResolutionChromatixInfo.
+        special_mode_mask="0" means none of the special modes are
+            selected.
+    sensor_resolution_index:
+        It is the sensor resolution index for which chromatix libraries
+            will be choosen.
+        It is applicable only in ResolutionChromatixInfo.
+
+ISPCommon :
+    Common tuning library name for ISP
+ISPPreview :
+    Preview tuning library name for ISP
+ISPSnapshot :
+    Snapshot tuning library name for ISP
+CPPCommon :
+    Common tuning library name for CPP
+CPPPreview :
+    Preview tuning library name for CPP
+CPPSnapshot :
+    Snapshot tuning library name for CPP
+CPPLiveshot :
+    Liveshot tuning library name for CPP
+PostProc :
+    Tuning library name for postproc module
+A3Preview :
+    Preview tuning library for 3A
+A3Video :
+    Video tuning library for 3A
+
+Order of Resolution Pick:
+    Assume the current sensor mode is "r" and special mode mask is "s".
+    Chromatix for a module and type is choosen in this order till we find a
+        valid chroamtix file name or else NULL is returned.
+    1) From ResolutionChromatixInfo node for which sensor_resolution_index
+        is "r" and special_mode_mask is "s".
+    2) From CommonChromatixInfo node for which special_mode_mask is "s".
+    3) From ResolutionChromatixInfo node for which sensor_resolution_index
+        is "r" and special_mode_mask is "0".
+    4) From CommonChromatixInfo node for which special_mode_mask is "0".
+    5) NULL is returned if we dont find in any of the above cases.
+
+special_mode_mask values:
+    SENSOR_SPECIAL_MODE_NONE = 0,
+    SENSOR_SPECIAL_MODE_FLASH = 1,
+    SENSOR_SPECIAL_MODE_ZOOM_UPSCALE = 2,
+    SENSOR_SPECIAL_MODE_ZOOM_DOWNSCALE = 4,
+    SENSOR_SPECIAL_MODE_OIS_CAPTURE = 8,
+-->
+
+<ChromatixConfigurationRoot>
+  <CommonChromatixInfo>
+    <ChromatixName special_mode_mask="0">
+      <ISPCommon>s5kgm1_xinli_common</ISPCommon>
+      <PostProc>s5kgm1_xinli_postproc</PostProc>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="OPPO_ENGINEER_MODE">
+      <ISPCommon>s5kgm1_xinli_common_engineer</ISPCommon>
+      <ISPPreview>s5kgm1_xinli_isp_video_engineer</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_video_engineer</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_video_engineer</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_preview_cpp_engineer</CPPPreview>
+      <CPPVideo>s5kgm1_xinli_preview_cpp_engineer</CPPVideo>
+      <CPPSnapshot>s5kgm1_xinli_preview_cpp_engineer</CPPSnapshot>
+      <A3Preview>s5kgm1_xinli_3a_zsl_preview_engineer</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_zsl_preview_engineer</A3Video>
+    </ChromatixName>
+  </CommonChromatixInfo>
+  <ResolutionChromatixInfo>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="0">
+      <ISPPreview>s5kgm1_xinli_isp_zsl_snapshot</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_zsl_snapshot</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_zsl_snapshot</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_zsl_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_zsl_snapshot_cpp</CPPSnapshot>
+      <CPPCustom>s5kgm1_xinli_zsl_multiframe_cpp</CPPCustom>
+      <CPPFace>s5kgm1_xinli_zsl_face_cpp</CPPFace>
+      <FaceMuti>s5kgm1_xinli_zsl_multiframe_face_cpp</FaceMuti>
+      <CPPLess>s5kgm1_xinli_zsl_less_cpp</CPPLess>
+      <CPPVideo>s5kgm1_xinli_zsl_preview_cpp</CPPVideo>
+      <CPPLiveshot>s5kgm1_xinli_zsl_snapshot_cpp</CPPLiveshot>
+      <A3Preview>s5kgm1_xinli_3a_zsl_preview</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_zsl_preview</A3Video>
+      <CPPZoom>s5kgm1_xinli_zsl_zoom_cpp</CPPZoom>
+      <CPPPrvzoom>s5kgm1_xinli_zoom_preview_cpp</CPPPrvzoom>
+      <CPPMultiFlash>s5kgm1_xinli_zsl_flash_cpp</CPPMultiFlash>
+      <CPPHdr>s5kgm1_xinli_zsl_snapshot_cpp_hdr</CPPHdr>
+      <CPPSkinFaceHDR>s5kgm1_xinli_zsl_snapshot_cpp_hdr_face</CPPSkinFaceHDR>
+      <CPPLowHdr>s5kgm1_xinli_zsl_snapshot_cpp_low_hdr</CPPLowHdr>
+      <CPPLowSkinFaceHDR>s5kgm1_xinli_zsl_snapshot_cpp_low_hdr_face</CPPLowSkinFaceHDR>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="OPPO_HDR_ENABLE">
+      <A3Preview>s5kgm1_xinli_3a_zsl_preview_hdr</A3Preview>
+      <ISPCommon>s5kgm1_xinli_common</ISPCommon>
+      <ISPPreview>s5kgm1_xinli_isp_zsl_snapshot_hdr</ISPPreview>
+    <ISPSnapshot>s5kgm1_xinli_isp_zsl_snapshot_hdr</ISPSnapshot>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="OPPO_PROFESSIONAL">
+      <ISPPreview>s5kgm1_xinli_isp_zsl_preview_professional</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_zsl_snapshot_professional</ISPSnapshot>
+      <CPPPreview>s5kgm1_xinli_zsl_preview_professional_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_zsl_snapshot_professional_cpp</CPPSnapshot>
+      <A3Preview>s5kgm1_xinli_3a_zsl_preview_professional</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_zsl_preview_professional</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_binning</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="OPPO_PANORAMA">
+      <ISPPreview>s5kgm1_xinli_isp_zsl_snapshot_panorama</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_zsl_snapshot_panorama</ISPSnapshot>
+      <CPPPreview>s5kgm1_xinli_zsl_preview_cpp_panorama</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_zsl_snapshot_cpp_panorama</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_zsl_snapshot_cpp_panorama</CPPVideo>
+      <A3Preview>s5kgm1_xinli_3a_zsl_preview_panorama</A3Preview>
+      <ISPCommon>s5kgm1_xinli_common_binning</ISPCommon>
+    </ChromatixName>
+     <ChromatixName sensor_resolution_index="0" special_mode_mask="OPPO_SIZE_1080P">
+      <ISPPreview>s5kgm1_xinli_isp_1080p_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_1080p_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_1080p_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_preview_1080p_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_other_liveshot_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_preview_1080p_cpp</CPPVideo>
+      <A3Preview>s5kgm1_xinli_3a_wechat_preview</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_wechat_preview</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_binning</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="OPPO_SIZE_720P">
+      <ISPPreview>s5kgm1_xinli_isp_1080p_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_1080p_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_1080p_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_preview_720p_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_preview_720p_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_preview_720p_cpp</CPPVideo>
+      <A3Preview>s5kgm1_xinli_3a_default_preview</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_default_preview</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_binning</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="OPPO_SIZE_VGA">
+      <ISPPreview>s5kgm1_xinli_isp_1080p_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_1080p_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_1080p_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_preview_420p_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_preview_420p_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_preview_420p_cpp</CPPVideo>
+      <A3Preview>s5kgm1_xinli_3a_wechat_preview</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_wechat_preview</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_binning</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1">
+      <ISPPreview>s5kgm1_xinli_isp_zsl_snapshot_full_portrait</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_zsl_snapshot_full_portrait</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_zsl_snapshot_full_portrait</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_zsl_preview_cpp_full_portrait</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_zsl_snapshot_cpp_full_portrait</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_zsl_snapshot_cpp_full_portrait</CPPVideo>
+      <CPPCustom>s5kgm1_xinli_zsl_custom_cpp_full_portrait</CPPCustom>
+      <CPPFace>s5kgm1_xinli_zsl_face_cpp_full_portrait</CPPFace>
+      <A3Preview>s5kgm1_xinli_3a_zsl_preview_full_portrait</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_zsl_preview_full_portrait</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2" special_mode_mask="0">
+      <ISPPreview>s5kgm1_xinli_isp_4k_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_4k_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_4k_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_1080p_video_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_1080p_liveshot_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_1080p_video_cpp</CPPVideo>
+      <CPPLiveshot>s5kgm1_xinli_1080p_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5kgm1_xinli_3a_4k_video</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_4k_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_video</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2" special_mode_mask="OPPO_VIDEO_4K">
+      <ISPPreview>s5kgm1_xinli_isp_4k_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_4k_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_4k_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_4k_video_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_4k_liveshot_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_4k_video_cpp</CPPVideo>
+      <CPPLiveshot>s5kgm1_xinli_4k_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5kgm1_xinli_3a_4k_video</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_4k_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_video</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2" special_mode_mask="OPPO_VIDEO_1080P">
+      <ISPPreview>s5kgm1_xinli_isp_4k_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_4k_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_4k_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_1080p_video_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_1080p_liveshot_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_1080p_video_cpp</CPPVideo>
+      <CPPLiveshot>s5kgm1_xinli_1080p_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5kgm1_xinli_3a_4k_video</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_4k_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_video</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2" special_mode_mask="OPPO_VIDEO_720P">
+      <ISPPreview>s5kgm1_xinli_isp_4k_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_4k_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_4k_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_720p_video_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_720p_liveshot_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_720p_video_cpp</CPPVideo>
+      <CPPLiveshot>s5kgm1_xinli_720p_liveshot_cpp</CPPLiveshot>
+      <A3Preview>s5kgm1_xinli_3a_4k_video</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_4k_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_video</ISPCommon>
+    </ChromatixName>
+     <ChromatixName sensor_resolution_index="2" special_mode_mask="OPPO_SIZE_1080P">
+      <ISPPreview>s5kgm1_xinli_isp_1080p_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_1080p_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_1080p_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_preview_1080p_16_9_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_other_liveshot_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_preview_1080p_16_9_cpp</CPPVideo>
+      <A3Preview>s5kgm1_xinli_3a_wechat_preview</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_wechat_preview</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_video</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2" special_mode_mask="OPPO_SIZE_720P">
+      <ISPPreview>s5kgm1_xinli_isp_1080p_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_1080p_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_1080p_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_preview_720p_16_9_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_preview_720p_16_9_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_preview_720p_16_9_cpp</CPPVideo>
+      <A3Preview>s5kgm1_xinli_3a_1080p_video</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_1080p_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_video</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2" special_mode_mask="OPPO_SIZE_VGA">
+      <ISPPreview>s5kgm1_xinli_isp_1080p_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_1080p_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_1080p_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_preview_420p_16_9_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_preview_420p_16_9_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_preview_420p_16_9_cpp</CPPVideo>
+      <A3Preview>s5kgm1_xinli_3a_wechat_preview</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_wechat_preview</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_video</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="3" special_mode_mask="0">
+      <ISPPreview>s5kgm1_xinli_isp_zsl_snapshot</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_zsl_snapshot_supernight</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_4k_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_zsl_preview_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_zsl_snapshot_cpp_supernight</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_4k_video_cpp</CPPVideo>
+      <CPPFace>s5kgm1_xinli_zsl_face_cpp_supernight</CPPFace>
+      <A3Preview>s5kgm1_xinli_3a_zsl_preview_supernight</A3Preview>
+      <CPPLiveshot>s5kgm1_xinli_4k_liveshot_cpp</CPPLiveshot>
+      <A3Video>s5kgm1_xinli_3a_4k_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_supernight</ISPCommon>
+      <CPPCustom>s5kgm1_xinli_zsl_multiframe_cpp</CPPCustom>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="4" special_mode_mask="0">
+      <ISPPreview>s5kgm1_xinli_isp_hfr60_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_hfr60_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_hfr60_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_hfr60_video_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_hfr60_video_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_hfr60_video_cpp</CPPVideo>
+      <CPPLiveshot>s5kgm1_xinli_hfr60_video_cpp</CPPLiveshot>
+      <A3Preview>s5kgm1_xinli_3a_hfr60_video</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_hfr60_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_binning</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="0">
+      <ISPPreview>s5kgm1_xinli_isp_hfr90_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_hfr90_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_hfr90_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_hfr90_video_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_hfr90_video_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_hfr90_video_cpp</CPPVideo>
+      <CPPLiveshot>s5kgm1_xinli_hfr90_video_cpp</CPPLiveshot>
+      <A3Preview>s5kgm1_xinli_3a_hfr90_video</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_hfr90_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_binning</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="6" special_mode_mask="0">
+      <ISPPreview>s5kgm1_xinli_isp_hfr120_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_hfr120_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_hfr120_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_hfr120_video_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_hfr120_video_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_hfr120_video_cpp</CPPVideo>
+      <CPPLiveshot>s5kgm1_xinli_hfr120_video_cpp</CPPLiveshot>
+      <A3Preview>s5kgm1_xinli_3a_hfr120_video</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_hfr120_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_binning</ISPCommon>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="7" special_mode_mask="0">
+      <ISPPreview>s5kgm1_xinli_isp_hfr240_video</ISPPreview>
+      <ISPSnapshot>s5kgm1_xinli_isp_hfr240_video</ISPSnapshot>
+      <ISPVideo>s5kgm1_xinli_isp_hfr240_video</ISPVideo>
+      <CPPPreview>s5kgm1_xinli_hfr240_video_cpp</CPPPreview>
+      <CPPSnapshot>s5kgm1_xinli_hfr240_video_cpp</CPPSnapshot>
+      <CPPVideo>s5kgm1_xinli_hfr240_video_cpp</CPPVideo>
+      <CPPLiveshot>s5kgm1_xinli_hfr240_video_cpp</CPPLiveshot>
+      <A3Preview>s5kgm1_xinli_3a_hfr240_video</A3Preview>
+      <A3Video>s5kgm1_xinli_3a_hfr240_video</A3Video>
+      <ISPCommon>s5kgm1_xinli_common_binning</ISPCommon>
+    </ChromatixName>
+  </ResolutionChromatixInfo>
+</ChromatixConfigurationRoot>

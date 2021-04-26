@@ -1,0 +1,25 @@
+##/*************************************************************
+## ** File: - vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service.rc
+## ** VENDOR_EDIT
+## ** Copyright (C), 2016-2020, OPPO Mobile Comm Corp., Ltd
+## **
+## ** Description : 1.0
+## **           This is a common file
+## **
+## ** Version: 1.0
+## ** Date created: 2018/11/22
+## ** Author: zongxin@camera
+## **
+## ** ------------------ Revision History: ---------------------
+## **      <author>        <date>                    <desc>
+## **      zongxin         2018/11/22      modify for APS
+## *************************************************************/
+
+service oppoalgoprocessservice /vendor/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service
+    class main
+    user media
+    ioprio rt 4
+    group camera input drmrpc sdcard_rw system
+
+
+

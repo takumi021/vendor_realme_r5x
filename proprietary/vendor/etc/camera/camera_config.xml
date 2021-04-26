@@ -87,13 +87,14 @@ LensInfo : Information of the lens present in the module.
 -->
 
 <CameraConfigurationRoot>
-    <CameraModuleConfig>
+ <CameraModuleConfig>
+    <!-- 48M BACK ONE -->
     <CameraId>0</CameraId>
-    <SensorName>laurus_imx586_sunny</SensorName>
-    <EepromName>laurus_sunny_imx586</EepromName>
-    <ActuatorName>dw9800</ActuatorName>
+    <SensorName>s5kgm1_xinli</SensorName>
+    <ActuatorName>fp5516we2</ActuatorName>
+    <EepromName>xinli_s5kgm1</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>laurus_imx586_sunny_chromatix</ChromatixName>
+    <ChromatixName>s5kgm1_xinli_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
@@ -104,68 +105,50 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
+      <FocalLength>2.25</FocalLength>
+      <FNumber>1.79</FNumber>
+      <TotalFocusDistance>4.0</TotalFocusDistance>
+      <HorizontalViewAngle>79</HorizontalViewAngle>
+      <VerticalViewAngle>79</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <CameraModuleConfig>
+    <!-- 48M BACK TWO -->
+    <CameraId>0</CameraId>
+    <SensorName>s5kgm1_largan_2nd</SensorName>
+    <!--ModuleInfoPath>/proc/rear_eeprom_info</ModuleInfoPath-->
+    <ActuatorName>s5kgm1_fp5516we2_2nd</ActuatorName>
+    <EepromName>s5kgm1_qiutai_2nd</EepromName>
+    <FlashName>pmic</FlashName>
+    <ChromatixName>s5kgm1_largan_2nd_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+    <!--2019-07-5, Camera FOV Calibration:Adjust focallength -->
       <FocalLength>4.71</FocalLength>
       <FNumber>1.79</FNumber>
-      <TotalFocusDistance>4.0</TotalFocusDistance>
-      <HorizontalViewAngle>79.0</HorizontalViewAngle>
-      <VerticalViewAngle>46.98</VerticalViewAngle>
+      <TotalFocusDistance>5.0</TotalFocusDistance>
+      <HorizontalViewAngle>67.0</HorizontalViewAngle>
+      <VerticalViewAngle>53.0</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
   <CameraModuleConfig>
-    <CameraId>1</CameraId>
-    <SensorName>laurus_ov02a10_sunny</SensorName>
-    <ChromatixName>laurus_ov02a10_sunny_chromatix</ChromatixName>
-    <ModesSupported>1</ModesSupported>
-    <Position>BACK_AUX</Position>
-    <MountAngle>90</MountAngle>
-    <CSIInfo>
-      <CSIDCore>0</CSIDCore>
-      <LaneMask>0x3</LaneMask>
-      <LaneAssign>0x0</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>1.92</FocalLength>
-      <FNumber>2.4</FNumber>
-      <TotalFocusDistance>2.0</TotalFocusDistance>
-      <HorizontalViewAngle>84</HorizontalViewAngle>
-      <VerticalViewAngle>52.4</VerticalViewAngle>
-      <MinFocusDistance>0.08</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
-
-  <CameraModuleConfig>
-    <CameraId>2</CameraId>
-    <SensorName>laurus_s5kgd1_sunny</SensorName>
-    <EepromName>laurus_sunny_s5kgd1</EepromName>
-    <ChromatixName>laurus_s5kgd1_sunny_chromatix</ChromatixName>
-    <ModesSupported>1</ModesSupported>
-    <Position>FRONT</Position>
-    <MountAngle>270</MountAngle>
-    <CSIInfo>
-      <CSIDCore>2</CSIDCore>
-      <LaneMask>0x1f</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>3.85</FocalLength>
-      <FNumber>2.0</FNumber>
-      <TotalFocusDistance>1.98</TotalFocusDistance>
-      <HorizontalViewAngle>79.1</HorizontalViewAngle>
-      <VerticalViewAngle>51.0</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
-  
-  <CameraModuleConfig>
+    <!-- 12M BACK ONE -->
     <CameraId>0</CameraId>
-    <SensorName>laurus_imx586_qtech</SensorName>
-    <EepromName>laurus_qtech_imx586</EepromName>
-    <ActuatorName>laurus_dw9800w_qtech</ActuatorName>
+    <SensorName>imx386_qtech</SensorName>
+    <ActuatorName>dw9718s</ActuatorName>
+    <EepromName>qtech_imx386</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>laurus_imx586_qtech_chromatix</ChromatixName>
+    <ChromatixName>imx386_qtech_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
@@ -176,41 +159,92 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>4.74</FocalLength>
-      <FNumber>1.79</FNumber>
+      <FocalLength>4.047</FocalLength>
+      <FNumber>1.8</FNumber>
       <TotalFocusDistance>4.0</TotalFocusDistance>
-      <HorizontalViewAngle>79.4</HorizontalViewAngle>
-      <VerticalViewAngle>46.98</VerticalViewAngle>
+      <HorizontalViewAngle>74.94</HorizontalViewAngle>
+      <VerticalViewAngle>74.94</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
   <CameraModuleConfig>
+    <!-- 12M BACK TWO -->
+    <CameraId>0</CameraId>
+    <SensorName>ov12a10</SensorName>
+    <ActuatorName>ov12a10_dw9718s</ActuatorName>
+    <EepromName>qtech_ov12a10</EepromName>
+    <FlashName>pmic</FlashName>
+    <ChromatixName>ov12a10_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>4.05</FocalLength>
+      <FNumber>1.8</FNumber>
+      <TotalFocusDistance>4.0</TotalFocusDistance>
+      <HorizontalViewAngle>75</HorizontalViewAngle>
+      <VerticalViewAngle>75</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <CameraModuleConfig>
+    <!-- 2M MONO ONE -->
     <CameraId>1</CameraId>
-    <SensorName>laurus_gc2375_qtech</SensorName>
-    <ChromatixName>laurus_gc2375_qtech_chromatix</ChromatixName>
+    <SensorName>ov02a1b</SensorName>
+    <ChromatixName>ov02a1b_holitech_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK_AUX</Position>
     <MountAngle>90</MountAngle>
     <CSIInfo>
       <CSIDCore>0</CSIDCore>
-      <LaneMask>0x3</LaneMask>
-      <LaneAssign>0x0</LaneAssign>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>1.8968</FocalLength>
+      <FocalLength>1.77</FocalLength>
       <FNumber>2.4</FNumber>
-      <TotalFocusDistance>2.0</TotalFocusDistance>
-      <HorizontalViewAngle>84.69</HorizontalViewAngle>
-      <VerticalViewAngle>52.4</VerticalViewAngle>
-      <MinFocusDistance>0.08</MinFocusDistance>
+      <TotalFocusDistance>4.0</TotalFocusDistance>
+      <HorizontalViewAngle>76.4</HorizontalViewAngle>
+      <VerticalViewAngle>60.7</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
   <CameraModuleConfig>
+    <!-- 2M MONO ONE -->
+    <CameraId>4</CameraId>
+    <SensorName>gc02m0_mono1</SensorName>
+    <ChromatixName>gc02m0_mono1_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK_AUX</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x18</LaneMask>
+      <LaneAssign>0x03</LaneAssign>
+      <ComboMode>1</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>1.77</FocalLength>
+      <FNumber>2.4</FNumber>
+      <TotalFocusDistance>2.48</TotalFocusDistance>
+      <HorizontalViewAngle>76.4</HorizontalViewAngle>
+      <VerticalViewAngle>60.7</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <CameraModuleConfig>
+    <!-- 8M FRONT ONE -->
     <CameraId>2</CameraId>
-    <SensorName>laurus_s5kgd1_ofilm</SensorName>
-    <EepromName>laurus_ofilm_s5kgd1</EepromName>
-    <ChromatixName>laurus_s5kgd1_ofilm_chromatix</ChromatixName>
+    <SensorName>s5k4h7</SensorName>
+    <EepromName>hlt_s5k4h7</EepromName>
+    <ChromatixName>s5k4h7_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>270</MountAngle>
@@ -221,20 +255,45 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>3.85</FocalLength>
+      <FocalLength>2.75</FocalLength>
       <FNumber>2.0</FNumber>
       <TotalFocusDistance>1.98</TotalFocusDistance>
-      <HorizontalViewAngle>79.1</HorizontalViewAngle>
-      <VerticalViewAngle>51.0</VerticalViewAngle>
+      <HorizontalViewAngle>66.0</HorizontalViewAngle>
+      <VerticalViewAngle>52.0</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
   <CameraModuleConfig>
+    <!-- 13M FRONT ONE -->
+    <CameraId>2</CameraId>
+    <SensorName>s5k3l6_ofilm</SensorName>
+    <EepromName>ofilm_s5k3l6</EepromName>
+    <ChromatixName>s5k3l6_ofilm_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>2</CSIDCore>
+      <LaneMask>0x1f</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>3.419</FocalLength>
+      <FNumber>2.0</FNumber>
+      <TotalFocusDistance>1.98</TotalFocusDistance>
+      <HorizontalViewAngle>79.0</HorizontalViewAngle>
+      <VerticalViewAngle>79.0</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <CameraModuleConfig>
+    <!-- 8M UW ONE -->
     <CameraId>3</CameraId>
-    <SensorName>laurus_s5k4h7_sunny</SensorName>
-    <EepromName>laurus_sunny_s5k4h7</EepromName>
+    <SensorName>hi846_sunny</SensorName>
+    <EepromName>sunny_hi846</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>laurus_s5k4h7_sunny_chromatix</ChromatixName>
+    <ChromatixName>hi846_sunny_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK_AUX</Position>
     <MountAngle>90</MountAngle>
@@ -246,22 +305,20 @@ LensInfo : Information of the lens present in the module.
     </CSIInfo>
     <LensInfo>
       <FocalLength>1.66</FocalLength>
-      <FNumber>2.2</FNumber>
-      <TotalFocusDistance>4.26</TotalFocusDistance>
-      <HorizontalViewAngle>120</HorizontalViewAngle>
-      <VerticalViewAngle>78.6</VerticalViewAngle>
-      <MinFocusDistance>0.4</MinFocusDistance>
-      <MaxRollDegree>360</MaxRollDegree>
-      <MaxPitchDegree>360</MaxPitchDegree>
-      <MaxYawDegree>360</MaxYawDegree>
+      <FNumber>2.25</FNumber>
+      <TotalFocusDistance>4.0</TotalFocusDistance>
+      <HorizontalViewAngle>119.0</HorizontalViewAngle>
+      <VerticalViewAngle>119.0</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
   <CameraModuleConfig>
+    <!-- 8M UW TWO -->
     <CameraId>3</CameraId>
-    <SensorName>laurus_s5k4h7_qtech</SensorName>
-    <EepromName>laurus_qtech_s5k4h7</EepromName>
+    <SensorName>ov8856_shinetech</SensorName>
+    <EepromName>shinetech_ov8856</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>laurus_s5k4h7_qtech_chromatix</ChromatixName>
+    <ChromatixName>ov8856_shinetech_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK_AUX</Position>
     <MountAngle>90</MountAngle>
@@ -272,39 +329,61 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>1.65</FocalLength>
-      <FNumber>2.2</FNumber>
-      <TotalFocusDistance>4.26</TotalFocusDistance>
-      <HorizontalViewAngle>78.6</HorizontalViewAngle>
-      <VerticalViewAngle>119</VerticalViewAngle>
-      <MinFocusDistance>0.4</MinFocusDistance>
-      <MaxRollDegree>360</MaxRollDegree>
-      <MaxPitchDegree>360</MaxPitchDegree>
-      <MaxYawDegree>360</MaxYawDegree>
+      <FocalLength>1.64</FocalLength>
+      <FNumber>2.25</FNumber>
+      <TotalFocusDistance>4.0</TotalFocusDistance>
+      <HorizontalViewAngle>97.7</HorizontalViewAngle>
+      <VerticalViewAngle>79.6</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
-  </CameraModuleConfig>
-    <CameraModuleConfig>
-    <CameraId>0</CameraId>
-    <SensorName>laurus_imx582_qtech</SensorName>
-    <EepromName>laurus_qtech_imx582</EepromName>
-    <ActuatorName>dw9800_imx582</ActuatorName>
+  </CameraModuleConfig>  
+  <CameraModuleConfig>
+    <!-- 2M MARCO ONE -->
+    <CameraId>4</CameraId>
+    <SensorName>gc2375h</SensorName>
+    <EepromName>hlt_gc2375h</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>laurus_imx582_qtech_chromatix</ChromatixName>
+    <ChromatixName>gc2375h_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
-    <Position>BACK</Position>
+    <Position>BACK_AUX</Position>
     <MountAngle>90</MountAngle>
     <CSIInfo>
-      <CSIDCore>1</CSIDCore>
-      <LaneMask>0x1F</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x18</LaneMask>
+      <LaneAssign>0x03</LaneAssign>
+      <ComboMode>1</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>4.71</FocalLength>
-      <FNumber>1.79</FNumber>
-      <TotalFocusDistance>4.0</TotalFocusDistance>
-      <HorizontalViewAngle>79.0</HorizontalViewAngle>
-      <VerticalViewAngle>46.98</VerticalViewAngle>
+      <FocalLength>1.77</FocalLength>
+      <FNumber>2.4</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>76.4</HorizontalViewAngle>
+      <VerticalViewAngle>60.7</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <CameraModuleConfig>
+    <!-- 2M MARCO TWO -->
+    <CameraId>4</CameraId>
+    <SensorName>gc2385</SensorName>
+    <EepromName>hlt_gc2385</EepromName>
+    <FlashName>pmic</FlashName>
+    <ChromatixName>gc2385_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK_AUX</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x18</LaneMask>
+      <LaneAssign>0x03</LaneAssign>
+      <ComboMode>1</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>1.77</FocalLength>
+      <FNumber>2.4</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>76.4</HorizontalViewAngle>
+      <VerticalViewAngle>60.7</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
