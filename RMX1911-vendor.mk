@@ -6,10 +6,20 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/realme/RMX1911
 
 PRODUCT_COPY_FILES += \
+    vendor/realme/RMX1911/proprietary/etc/camera/Charming.cng:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/Charming.cng \
+    vendor/realme/RMX1911/proprietary/etc/camera/M_Verify_Faster_Common_wp.model:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/M_Verify_Faster_Common_wp.model \
+    vendor/realme/RMX1911/proprietary/etc/camera/doubleloss_large.model:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/doubleloss_large.model \
+    vendor/realme/RMX1911/proprietary/etc/camera/faceTpl0.rgb32:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/faceTpl0.rgb32 \
+    vendor/realme/RMX1911/proprietary/etc/camera/faceTpl1.rgb32:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/faceTpl1.rgb32 \
+    vendor/realme/RMX1911/proprietary/etc/camera/gasryuv.model:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/gasryuv.model \
+    vendor/realme/RMX1911/proprietary/etc/camera/merged_model:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/merged_model \
+    vendor/realme/RMX1911/proprietary/etc/camera/merged_model_post:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/merged_model_post \
+    vendor/realme/RMX1911/proprietary/etc/camera/skinSeg.model:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/skinSeg.model \
     vendor/realme/RMX1911/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/realme/RMX1911/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/realme/RMX1911/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
     vendor/realme/RMX1911/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
+    vendor/realme/RMX1911/proprietary/lib/libcameraservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcameraservice.so \
     vendor/realme/RMX1911/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/realme/RMX1911/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfm-hci.so \
     vendor/realme/RMX1911/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
@@ -90,6 +100,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/realme/RMX1911/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/realme/RMX1911/proprietary/system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar \
+    vendor/realme/RMX1911/proprietary/system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar \
     vendor/realme/RMX1911/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/realme/RMX1911/proprietary/system_ext/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/system_ext/lib/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmframework.so \
@@ -152,22 +163,24 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/realme/RMX1911/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/realme/RMX1911/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
+    vendor/realme/RMX1911/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
     vendor/realme/RMX1911/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
+    vendor/realme/RMX1911/proprietary/vendor/bin/hang_guard:$(TARGET_COPY_OUT_VENDOR)/bin/hang_guard \
     vendor/realme/RMX1911/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
-    vendor/realme/RMX1911/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
-    vendor/realme/RMX1911/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.face@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.face@1.0-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service \
+    vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.0-service \
+    vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/realme/RMX1911/proprietary/vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.power.pasrmanager@1.0-service \
@@ -175,13 +188,16 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/realme/RMX1911/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/realme/RMX1911/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
+    vendor/realme/RMX1911/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/realme/RMX1911/proprietary/vendor/bin/init.qti.chg_policy.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.chg_policy.sh \
     vendor/realme/RMX1911/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/realme/RMX1911/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/realme/RMX1911/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/realme/RMX1911/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
+    vendor/realme/RMX1911/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
     vendor/realme/RMX1911/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/realme/RMX1911/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
+    vendor/realme/RMX1911/proprietary/vendor/bin/oppoalgo_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/oppoalgo_daemon \
     vendor/realme/RMX1911/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/realme/RMX1911/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/realme/RMX1911/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
@@ -208,9 +224,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/realme/RMX1911/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/realme/RMX1911/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
-    vendor/realme/RMX1911/proprietary/vendor/camera/fonts/MFYueYuan-Regular.ttf:$(TARGET_COPY_OUT_VENDOR)/camera/fonts/MFYueYuan-Regular.ttf \
-    vendor/realme/RMX1911/proprietary/vendor/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf:$(TARGET_COPY_OUT_VENDOR)/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf \
-    vendor/realme/RMX1911/proprietary/vendor/camera/fonts/MIUI_Time.ttf:$(TARGET_COPY_OUT_VENDOR)/camera/fonts/MIUI_Time.ttf \
+    vendor/realme/RMX1911/proprietary/vendor/etc/DxHDCP.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/DxHDCP.cfg \
     vendor/realme/RMX1911/proprietary/vendor/etc/acdbdata/19021/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/19021/Bluetooth_cal.acdb \
     vendor/realme/RMX1911/proprietary/vendor/etc/acdbdata/19021/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/19021/Codec_cal.acdb \
     vendor/realme/RMX1911/proprietary/vendor/etc/acdbdata/19021/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/19021/General_cal.acdb \
@@ -294,103 +308,92 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/etc/acdbdata/homer/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/homer/workspaceFile.qwsp \
     vendor/realme/RMX1911/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/realme/RMX1911/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/CFR_para.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para.bin \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/GpuKernelRepo.pb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/GpuKernelRepo.pb \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/LDC_packdata_xiaomi_F2_src1.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_packdata_xiaomi_F2_src1.dat \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/LDC_packdata_xiaomi_F2_src2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_packdata_xiaomi_F2_src2.dat \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/MIUI_Time.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/MIUI_Time.ttf \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/Miui-Light.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Miui-Light.ttf \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/beauty_ui9_intelligent_params.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty_ui9_intelligent_params.config \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/M_Attribute_Gender_Age_1.0.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_Gender_Age_1.0.model \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/arc_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arc_golden.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/attribute.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/attribute.model \
     vendor/realme/RMX1911/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/camera/cameraconfig.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraconfig.txt \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/csidtg_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/csidtg_camera.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/csidtg_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/csidtg_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/female_bg.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/female_bg.png \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/female_icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/female_icon.png \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/goldResult_582.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/goldResult_582.bin \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/goldResult_586.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/goldResult_586.bin \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx214_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx214_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx230_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx230_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx230_qc2002_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx230_qc2002_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx230_qc2002_with_gyro_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx230_qc2002_with_gyro_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx258_bear_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx258_bear_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx258_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx258_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx258_lc898217xc_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx258_lc898217xc_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx258_mono_bear_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx258_mono_bear_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx258_mono_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx258_mono_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx298_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx298_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx298_gt24c64_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx298_gt24c64_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx318_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx318_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx362_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx362_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx362_chromatix_bear.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx362_chromatix_bear.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx362_gt24c64a_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx362_gt24c64a_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx376_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx376_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx378_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx378_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx519_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx519_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_gc2375_qtech_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_gc2375_qtech_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_gc2375_qtech_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_gc2375_qtech_india_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_imx582_qtech_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_imx582_qtech_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_imx582_qtech_factory_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_imx582_qtech_factory_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_imx582_qtech_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_imx582_qtech_india_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_imx586_qtech_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_imx586_qtech_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_imx586_qtech_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_imx586_qtech_india_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_imx586_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_imx586_sunny_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_imx586_sunny_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_imx586_sunny_india_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_ov02a10_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_ov02a10_sunny_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_ov02a10_sunny_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_ov02a10_sunny_india_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5k4h7_qtech_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5k4h7_qtech_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5k4h7_qtech_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5k4h7_qtech_india_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5k4h7_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5k4h7_sunny_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5k4h7_sunny_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5k4h7_sunny_india_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5kgd1_ofilm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5kgd1_ofilm_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5kgd1_ofilm_global_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5kgd1_ofilm_global_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5kgd1_ofilm_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5kgd1_ofilm_india_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5kgd1_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5kgd1_sunny_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5kgd1_sunny_global_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5kgd1_sunny_global_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/laurus_s5kgd1_sunny_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/laurus_s5kgd1_sunny_india_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/lf_facerank_model.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lf_facerank_model.bin \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/libalfpc_tuning.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/libalfpc_tuning.bin \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/male_bg.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/male_bg.png \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/male_icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/male_icon.png \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/model_back.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_back.dlc \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/model_front.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_front.dlc \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/000.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/000_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/001.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/001_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/002.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/002_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/003.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/003_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/010.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/010_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/011.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/011_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/012.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/012_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/013.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/013.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/100.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/100_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/101.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/101_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/102.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/102_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/103.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/103_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/110.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/110_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/111.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/111_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/112.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/112_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/113.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/113.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/200.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/200_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/201.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/201_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/202.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/202_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/203.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/203_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/210.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/210_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/211.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/211_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212_pre.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/213.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/PreCalVarBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreCalVarBinary.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/PreHighPassBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHighPassBinary.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/PreHoriFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHoriFilterBinary.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/PreMakeupBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMakeupBinary.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/PreMorphBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMorphBinary.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/PreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreOnlywhitenBinary.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/PreSkintuneBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreSkintuneBinary.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/PreVertFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreVertFilterBinary.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/eyeBright.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/skin_CCT.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_CCT.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/skin_back.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_back.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/skin_dark.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_dark.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/skin_indian.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_indian.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/skin_normal.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_normal.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/skinmask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/fb_model/skinmask.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.png \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/gc02m0_mono1_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gc02m0_mono1_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/gc2375h_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gc2375h_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/gc2385_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gc2385_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/gender_smile_race_mask_MTNet_2.1.1.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gender_smile_race_mask_MTNet_2.1.1.model \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/hi846_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hi846_sunny_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx386_qtech_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx386_qtech_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/imx386_qtech_monets_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx386_qtech_monets_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/megvii/cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/megvii/cache \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/megvii/siq_ocl_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/megvii/siq_ocl_cache \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/megvii/superiq_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/megvii/superiq_model \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov/arc_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov/arc_golden.bin \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov02a1b_holitech_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov02a1b_holitech_chromatix.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov12a10_bear_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov12a10_bear_chromatix.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov12a10_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov12a10_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov13850_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov13850_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov13850_q13v06k_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov13850_q13v06k_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov13855_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov13855_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov13880_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov13880_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov2281_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov2281_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov2680_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov2680_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov4688_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov4688_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov5670_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov5670_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov5670_f5670bq_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov5670_f5670bq_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov5695_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov5695_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov7251_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov7251_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov8856_bear_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8856_bear_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov8856_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8856_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov8858_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8858_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov8865_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8865_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k2l7_8953_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k2l7_8953_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k2l7_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k2l7_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k2l7sx_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k2l7sx_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3l8_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l8_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3l8_f3l8yam_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l8_f3l8yam_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3l8_mono_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l8_mono_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3m2xm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3m2xm_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3m2xm_chromatix_bear.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3m2xm_chromatix_bear.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3m2xx_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3m2xx_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3m3sm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3m3sm_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3p3sm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3p3sm_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3p8sp_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3p8sp_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k5e9yu05_mono_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e9yu05_mono_chromatix.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/score_bg.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/score_bg.png \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/score_icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/score_icon.png \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/sdm660_camera_global.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm660_camera_global.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/sdm660_camera_india.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm660_camera_india.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin \
-    vendor/realme/RMX1911/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/ov8856_shinetech_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8856_shinetech_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k3l6_ofilm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l6_ofilm_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5k4h7_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k4h7_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5kgm1_largan_2nd_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5kgm1_largan_2nd_chromatix.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/camera/s5kgm1_xinli_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5kgm1_xinli_chromatix.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/realme/RMX1911/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -423,23 +426,23 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
-    vendor/realme/RMX1911/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
-    vendor/realme/RMX1911/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
+    vendor/realme/RMX1911/proprietary/vendor/etc/init/hang_guard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hang_guard.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
+    vendor/realme/RMX1911/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
@@ -449,15 +452,21 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.face@1.0-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service.rc \
+    vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service.rc \
+    vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-sscrpc-service.rc \
+    vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
+    vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.0-service.rc \
+    vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/realme/RMX1911/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/realme/RMX1911/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/realme/RMX1911/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
@@ -467,12 +476,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/permissions/vendor-oppo-hardware.biometrics.fingerprintpay.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-oppo-hardware.biometrics.fingerprintpay.xml \
+    vendor/realme/RMX1911/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/qdcm_calib_data_ili9881h_hdp_video_truly_auo_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ili9881h_hdp_video_truly_auo_panel.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/qdcm_calib_data_nt36525b_hdp_video_hlt_boe_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36525b_hdp_video_hlt_boe_panel.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/qdcm_calib_data_nt36672_truly_fhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672_truly_fhd_video_mode_dsi_panel.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+    vendor/realme/RMX1911/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/realme/RMX1911/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/realme/RMX1911/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/realme/RMX1911/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
@@ -595,7 +606,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/android.frameworks.faceservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.faceservice@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-external.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-legacy.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/android.hardware.sensors@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
@@ -603,26 +613,31 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_adreno.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/audio.primary.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.trinket.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/camera.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.trinket.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/sound_trigger.primary.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.trinket.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.iop@2.0-impl.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/imx386_PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx386_PdafLibrary.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libFaceGrade.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFaceGrade.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libDxHdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDxHdcp.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libI420colorconvert.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libOPPORectify.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOPPORectify.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libOccluDetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOccluDetect.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDecSw.so \
@@ -639,14 +654,20 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libOppoAPSMemMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOppoAPSMemMgr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libOppoAlgoClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOppoAlgoClient.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libOppoPreviewBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOppoPreviewBokeh.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libPerfectlyClearCrux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPerfectlyClearCrux.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSNPE.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libSTDualCamCaptureBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSTDualCamCaptureBokeh.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libSTdisp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSTdisp.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libSubSystemShutdown.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSubSystemShutdown.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libVDClearShot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDClearShot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libVDBlurlessAPI_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDBlurlessAPI_v2.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libVDDualCameraBlurlessAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDDualCameraBlurlessAPI.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libVDPostureDetection.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDPostureDetection.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libVDSuperPhotoAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDSuperPhotoAPI.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVkLayer_q3dtools.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libXMFD_AgeGender.so:$(TARGET_COPY_OUT_VENDOR)/lib/libXMFD_AgeGender.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/lib_lowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_lowlight.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
@@ -664,31 +685,42 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_dw9763b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9763b.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_dw9790a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9790a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_dw9800.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9800.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_dw9800_imx582.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9800_imx582.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_laurus_dw9800w_qtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_laurus_dw9800w_qtech.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_fp5516we2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_fp5516we2.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898122.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_lc898212xd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898212xd.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_lc898212xd_qc2002.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898212xd_qc2002.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_lc898217xc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898217xc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_ov12a10_dw9718s.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov12a10_dw9718s.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_pseudo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_pseudo.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu64243gwz.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libactuator_s5kgm1_fp5516we2_2nd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_s5kgm1_fp5516we2_2nd.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_app_profiles.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalCFR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalLDC.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalhLDC.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libalipay_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalipay_factory.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarc_sensor_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarc_sensor_adapter.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_beautyshot_lite_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot_lite_image.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_distortion_correction_6125.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_distortion_correction_6125.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_bokeh_api.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_left.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_dualcam_refocus_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_dualcam_refocus_right.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_right.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_hdr_couple_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdr_couple_api.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_hdr_denoise_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdr_denoise_api.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_hdrplus_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdrplus_hvx_stub.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_high_dynamic_range.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_high_dynamic_range_couple.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_high_dynamic_range_couple.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_low_light_hdr.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_portrait_lighting.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_portrait_lighting.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_portrait_lighting_c.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_portrait_lighting_c.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_picauto.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_picauto.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_smart_denoise.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_smart_denoise.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_super_night_raw.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcsoft_videostabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_videostabilizer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcvs.dep.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcvs.dep.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libarcvs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcvs.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1cper.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1crt.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1crtx.so \
@@ -698,9 +730,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++_shared.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libblur_channel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblur_channel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_scene.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libcamera_core_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_core_hwi.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdfw.so \
@@ -712,312 +745,162 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_csidtg_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_postproc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_csidtg_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_preview.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_csidtg_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_HDR_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_HDR_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_HDR_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_HDR_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_panorama_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_panorama_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_panorama_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_panorama_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_panorama_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_panorama_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_gc2375_qtech_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_gc2375_qtech_zsl_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_4k_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_4k_preview_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_4k_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_4k_video_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_cpp_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_default_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_default_preview_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_default_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_default_video_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_default_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_default_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_hfr_120_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_hfr_60_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_hfr_60_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_hfr_90_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_hfr_90_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_zsl_preview_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx582_qtech_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx582_qtech_zsl_video_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_48M_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_48M_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_48M_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_48M_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_default_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_default_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_default_video_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_default_video_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_hfr_120_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_hfr_120_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_hfr_60_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_hfr_60_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_hfr_90_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_hfr_90_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_qtech_zsl_video_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_qtech_zsl_video_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_48M_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_48M_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_48M_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_48M_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_default_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_default_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_default_video_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_default_video_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_hfr_120_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_hfr_120_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_hfr_60_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_hfr_60_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_hfr_90_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_hfr_90_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_imx586_sunny_zsl_video_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_imx586_sunny_zsl_video_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_HDR_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_HDR_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_HDR_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_HDR_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_panorama_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_panorama_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_panorama_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_panorama_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_panorama_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_panorama_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_ov02a10_sunny_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_ov02a10_sunny_zsl_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_4K.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_4K.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_faceunlock_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_faceunlock_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_faceunlock_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_faceunlock_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_faceunlock_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_faceunlock_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_120_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_120_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_60_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_60_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_90_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_hfr_90_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_panorama_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_panorama_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_panorama_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_panorama_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_panorama_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_panorama_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_qtech_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_qtech_zsl_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_4K.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_4K.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_faceunlock_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_faceunlock_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_faceunlock_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_faceunlock_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_faceunlock_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_faceunlock_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_120_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_120_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_60_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_60_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_90_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_hfr_90_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_panorama_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_panorama_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_panorama_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_panorama_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_panorama_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_panorama_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5k4h7_sunny_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5k4h7_sunny_zsl_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_32M_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_32M_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_HDR_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_HDR_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_HDR_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_HDR_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_faceunlock_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_faceunlock_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_faceunlock_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_faceunlock_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_faceunlock_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_faceunlock_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_120_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_120_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_60_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_60_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_90_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hfr_90_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hht_cpp_snapshot_8M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_hht_cpp_snapshot_8M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_weixin_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_weixin_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_weixin_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_weixin_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_ofilm_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_ofilm_zsl_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_32M_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_32M_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_HDR_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_HDR_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_HDR_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_HDR_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_faceunlock_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_faceunlock_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_faceunlock_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_faceunlock_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_faceunlock_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_faceunlock_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_120_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_120_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_60_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_60_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_90_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_hfr_90_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_hht_cpp_snapshot_8M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_hht_cpp_snapshot_8M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_weixin_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_weixin_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_weixin_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_weixin_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_factory_laurus_s5kgd1_sunny_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_factory_laurus_s5kgd1_sunny_zsl_video_bu64297.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_cpp_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_cpp_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_cpp_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_cpp_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_cpp_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_default_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_default_video_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_default_video_isp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_hfr_120_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_hfr_120_isp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_hfr_60_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_hfr_60_isp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_preview_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_preview_isp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_snapshot_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_snapshot_isp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc02m0_mono1_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc02m0_mono1_zsl_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_a3_default_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_a3_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_a3_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_a3_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_a3_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_a3_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_ds_chromatix.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_liveshot_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_liveshot_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_snapshot_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_snapshot_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_us_chromatix.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_cpp_video_full.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_snapshot_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_snapshot_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_video_full.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_zsl_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_zsl_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_zsl_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2375h_zsl_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2375h_zsl_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_a3_default_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_a3_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_a3_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_a3_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_a3_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_a3_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_ds_chromatix.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_liveshot_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_liveshot_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_snapshot_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_snapshot_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_us_chromatix.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_cpp_video_full.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_snapshot_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_snapshot_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_video_full.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_zsl_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_zsl_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_zsl_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_gc2385_zsl_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_gc2385_zsl_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_1080p_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_1080p_sunny_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_720p_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_720p_sunny_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_a3_default_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_a3_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_a3_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_a3_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_a3_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_a3_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_common_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_common_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_common_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_common_night.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_common_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_common_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_ds_chromatix.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_liveshot_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_liveshot_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_liveshot_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_liveshot_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_liveshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_liveshot_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_liveshot_snight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_liveshot_snight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_preview_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_preview_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_preview_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_preview_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_preview_snight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_preview_snight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_preview_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_preview_zoom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot_custom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot_custom_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot_custom_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot_snight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot_snight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_snapshot_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_snapshot_zoom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_us_chromatix.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_video_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_video_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_video_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_video_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_cpp_video_snight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_cpp_video_snight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_default_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_default_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_default_video_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_default_video_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_default_video_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_default_video_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_default_video_snight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_default_video_snight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_snapshot_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_snapshot_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_snapshot_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_snapshot_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_snapshot_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_snapshot_snight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_snapshot_snight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_preview_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_preview_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_preview_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_preview_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_preview_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_preview_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_preview_snight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_preview_snight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_video_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_video_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_video_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_video_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_hi846_sunny_zsl_video_snight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_sunny_zsl_video_snight.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx214_4k_preview_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_4k_preview_lc898122.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx214_4k_video_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_4k_video_lc898122.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx214_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_common.so \
@@ -1585,6 +1468,130 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx378_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx378_video_hdr.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx378_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx378_zsl_preview.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx378_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx378_zsl_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_1080p_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_1080p_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_1080p_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_1080p_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_4k_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_4k_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_4k_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_4k_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_default_preview_4ksize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_default_preview_4ksize.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_default_preview_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_default_preview_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_default_video_4ksize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_default_video_4ksize.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_default_video_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_default_video_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_hfr120_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_hfr120_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_hfr240_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_hfr240_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_hfr60_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_hfr60_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_hfr90_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_hfr90_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_special_16_9_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_special_16_9_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_special_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_special_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_wechat_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_wechat_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview_3264x2448.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview_3264x2448.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview_night.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_3a_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_3a_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_4k_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_4k_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_720p_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_720p_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_common_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_common_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_common_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_common_night.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_common_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_common_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_common_special.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_common_special.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_common_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_common_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_common_zzhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_common_zzhdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_cpp_snapshot_downscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_cpp_snapshot_downscale.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_cpp_snapshot_upscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_cpp_snapshot_upscale.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_default_video_4ksize_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_default_video_4ksize_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_default_video_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_default_video_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_fast_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_fast_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_hfr120_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_hfr120_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_hfr240_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_hfr240_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_hfr60_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_hfr60_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_hfr90_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_hfr90_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_1080p_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_1080p_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_4k_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_4k_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_default_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_default_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_default_video_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_default_video_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_hdr_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_hdr_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_hfr120_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_hfr120_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_hfr240_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_hfr240_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_hfr60_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_hfr60_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_hfr90_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_hfr90_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_snapshot_3264x2448.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_snapshot_3264x2448.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_snapshot_3264x2448_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_snapshot_3264x2448_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_snapshot_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_snapshot_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_special_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_special_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_preview_professional_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_preview_professional_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_night.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_professional_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_isp_zsl_snapshot_professional_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_preview_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_preview_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_preview_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_preview_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_preview_4ksize_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_preview_4ksize_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_preview_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_preview_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_preview_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_preview_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_preview_cpp_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_preview_cpp_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_preview_wechat_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_preview_wechat_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_snapshot_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_snapshot_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_snapshot_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_snapshot_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_snapshot_cpp_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_snapshot_cpp_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special2_1080p_more_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special2_1080p_more_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special2_1080p_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special2_1080p_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special2_720p_more_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special2_720p_more_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special2_720p_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special2_720p_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special2_vga_more_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special2_vga_more_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special2_vga_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special2_vga_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special_1080p_more_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special_1080p_more_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special_1080p_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special_1080p_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special_720p_more_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special_720p_more_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special_720p_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special_720p_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special_more_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special_more_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special_vga_more_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special_vga_more_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_special_vga_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_special_vga_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zoom_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zoom_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zoom_preview_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zoom_preview_cpp_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_custom_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_custom_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_custom_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_custom_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_custom_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_custom_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_custom_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_custom_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_face_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_face_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_face_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_face_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_face_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_face_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_flash_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_flash_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_less_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_less_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_preview_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_preview_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_preview_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_preview_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_preview_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_preview_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_preview_fb_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_preview_fb_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_preview_night_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_preview_night_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_preview_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_preview_professional_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_hdr_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_hdr_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_fb_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_fb_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_night_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_night_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_professional_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_snapshot_professional_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_snapshot_professional_cpp_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_zoom_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_zoom_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx386_qtech_zsl_zoom_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx386_qtech_zsl_zoom_cpp_17021.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx519_3A_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx519_3A_hfr_120.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx519_3A_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx519_3A_hfr_240.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx519_3A_hfr_480.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx519_3A_hfr_480.so \
@@ -1616,691 +1623,33 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx519_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx519_snapshot.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx519_snapshot_raw_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx519_snapshot_raw_hdr.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_imx519_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx519_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_HDR_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_HDR_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_HDR_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_HDR_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_panorama_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_panorama_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_panorama_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_panorama_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_panorama_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_panorama_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_gc2375_qtech_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_gc2375_qtech_zsl_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_4k_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_4k_preview_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_4k_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_4k_video_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_cpp_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_default_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_default_preview_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_default_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_default_video_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_default_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_default_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_hfr_120_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_hfr_60_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_hfr_60_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_hfr_90_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_hfr_90_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_zsl_preview_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx582_qtech_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx582_qtech_zsl_video_3a.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_48M_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_48M_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_48M_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_48M_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_default_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_default_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_default_video_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_default_video_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_hfr_120_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_hfr_120_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_hfr_60_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_hfr_60_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_hfr_90_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_hfr_90_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_imx586_qtech_zsl_video_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_imx586_qtech_zsl_video_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_HDR_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_HDR_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_HDR_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_HDR_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_panorama_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_panorama_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_panorama_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_panorama_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_panorama_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_panorama_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_india_laurus_ov02a10_sunny_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_india_laurus_ov02a10_sunny_zsl_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_HDR_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_HDR_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_HDR_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_HDR_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_panorama_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_panorama_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_panorama_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_panorama_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_panorama_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_panorama_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_gc2375_qtech_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_gc2375_qtech_zsl_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_common_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_common_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_hfr_240.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_12M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_12M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_12M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_12M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_12M_sr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_12M_sr.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_48M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_48M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_48M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_48M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_portrait.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_sn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_sn.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_hfr_240.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_snapshot_12M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_snapshot_12M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_snapshot_12M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_snapshot_12M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_snapshot_48M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_snapshot_48M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_snapshot_portrait.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_snapshot_sn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_snapshot_sn.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_hfr_240.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_preview_12M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_preview_12M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_preview_48M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_preview_48M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_preview_panorma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_preview_panorma.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_preview_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_preview_portrait.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_preview_sn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_preview_sn.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_preview_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_preview_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx582_qtech_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx582_qtech_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_48M_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_48M_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_48M_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_48M_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_default_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_default_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_default_video_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_default_video_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_hfr_120_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_hfr_120_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_hfr_60_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_hfr_60_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_hfr_90_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_hfr_90_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_qtech_zsl_video_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_qtech_zsl_video_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_common_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_common_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_hfr_240.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_12M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_12M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_12M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_12M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_12M_sr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_12M_sr.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_48M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_48M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_48M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_48M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_portrait.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_sn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_sn.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_hfr_240.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_snapshot_12M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_snapshot_12M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_snapshot_12M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_snapshot_12M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_snapshot_48M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_snapshot_48M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_snapshot_portrait.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_snapshot_sn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_snapshot_sn.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_hfr_240.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_preview_12M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_preview_12M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_preview_48M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_preview_48M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_preview_panorma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_preview_panorma.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_preview_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_preview_portrait.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_preview_sn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_preview_sn.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_preview_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_preview_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_imx586_sunny_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_imx586_sunny_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_common_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_common_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_hfr_240.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_12M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_12M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_12M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_12M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_12M_sr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_12M_sr.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_48M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_48M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_48M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_48M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_portrait.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_sn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_sn.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_hfr_240.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_12M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_12M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_48M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_48M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_portrait.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_sn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_sn.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_hfr_240.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_hfr_240.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_12M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_12M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_48M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_48M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_panorma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_panorma.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_portrait.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_sn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_sn.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_preview_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_video_4k.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_imx586_sunny_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_imx586_sunny_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_common_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_common_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_snapshot_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_preview_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_preview_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_qtech_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_common_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_common_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_snapshot_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_preview_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_preview_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_indian_s5k4h7_sunny_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_HDR_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_HDR_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_HDR_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_HDR_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_HDR_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_HDR_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_cpp_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_default_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_default_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_hht_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_hht_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_panorama_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_panorama_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_panorama_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_panorama_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_panorama_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_panorama_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_video_full.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_weixin_zsl_preview_dw9800w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_weixin_zsl_preview_dw9800w.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_zsl_preview_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_ov02a10_sunny_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_ov02a10_sunny_zsl_video_bu64297.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_common_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_common_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_snapshot_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_snapshot_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_zsl_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_zsl_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_zsl_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_zsl_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_zsl_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_zsl_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_zsl_preview_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_zsl_preview_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_qtech_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_qtech_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_common_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_common_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_snapshot_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_snapshot_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_snapshot_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_zsl_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_zsl_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_zsl_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_zsl_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_zsl_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_zsl_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_zsl_preview_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_zsl_preview_torch.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5k4h7_sunny_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5k4h7_sunny_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_32M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_32M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_8M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_8M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_8M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_8M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_32M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_32M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_8M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_8M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_8M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_8M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_preview_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_global_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_32M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_32M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_8M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_8M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_8M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_8M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_preview_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_india_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_preview_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_ofilm_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_32M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_32M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_8M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_8M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_8M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_8M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_32M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_32M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_8M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_8M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_8M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_8M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_preview_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_global_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_32M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_32M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_8M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_8M.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_8M_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_8M_hht.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_snapshot_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_video_1080P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_video_720P.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_cpp_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_preview_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_india_zsl_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_post_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_post_proc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_snapshot_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_snapshot_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_video_weixin.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_zsl_preview_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_zsl_preview_HDR.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_zsl_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_zsl_preview_faceunlock.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_zsl_preview_panorama.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_laurus_s5kgd1_sunny_zsl_video_weixin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_laurus_s5kgd1_sunny_zsl_video_weixin.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_a3_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_a3_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_a3_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_a3_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_cpp_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_cpp_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_cpp_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_cpp_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_cpp_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_cpp_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov02a1b_holitech_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov02a1b_holitech_zsl_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_1080p_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_1080p_video_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_3a_wechat_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_3a_wechat_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_3a_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_3a_zsl_preview_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_3a_zsl_preview_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_3a_zsl_preview_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_3a_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_3a_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_3a_zsl_preview_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_3a_zsl_preview_supernight.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_4k_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_4k_preview_3a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_4k_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_4k_video_3a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_bear_4k_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_bear_4k_preview_3a.so \
@@ -2330,14 +1679,21 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_bear_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_bear_zsl_preview_3a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_bear_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_bear_zsl_video_3a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_common_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_common_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_common_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_common_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_common_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_common_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_common_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_common_video.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_hfr_120.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_hfr_60.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_liveshot_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_liveshot_1080p.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_liveshot_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_liveshot_4k.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_liveshot_720p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_liveshot_720p.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_preview.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_snapshot.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_video_1080p.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_video_4k.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_cpp_video_720p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_cpp_video_720p.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_default_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_default_preview_3a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_default_video.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_default_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_default_video_3a.so \
@@ -2345,14 +1701,56 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_hfr_120.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_hfr_120_3a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_hfr_60_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_hfr_60_3a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_hfr_90.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_hfr_90_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_hfr_90_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_isp_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_isp_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_isp_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_isp_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_isp_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_isp_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_isp_zsl_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_isp_zsl_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_isp_zsl_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_isp_zsl_snapshot_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_isp_zsl_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_isp_zsl_snapshot_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_isp_zsl_snapshot_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_isp_zsl_snapshot_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_isp_zsl_snapshot_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_isp_zsl_snapshot_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_other_liveshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_other_liveshot_cpp.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_postproc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_preview_1080p_16_9_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_preview_1080p_16_9_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_preview_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_preview_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_preview_420p_16_9_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_preview_420p_16_9_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_preview_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_preview_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_preview_720p_16_9_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_preview_720p_16_9_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_preview_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_preview_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_preview_cpp_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_preview_cpp_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_preview_wechat_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_preview_wechat_cpp.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zoom_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zoom_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_custom_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_custom_cpp_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_face_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_face_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_face_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_face_cpp_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_face_cpp_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_face_cpp_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_flash_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_flash_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_less_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_less_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_multiframe_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_multiframe_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_multiframe_face_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_multiframe_face_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_multiframe_face_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_multiframe_face_cpp_portrait.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_preview_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_preview_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_preview_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_preview_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_preview_cpp_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_preview_cpp_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_preview_cpp_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_preview_engineer_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_preview_engineer_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_preview_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_preview_professional_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_snapshot_cpp_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_snapshot_cpp_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_snapshot_cpp_hdr_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_snapshot_cpp_hdr_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_snapshot_cpp_low_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_snapshot_cpp_low_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_snapshot_cpp_low_hdr_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_snapshot_cpp_low_hdr_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_snapshot_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_snapshot_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_snapshot_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_snapshot_cpp_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_snapshot_cpp_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_snapshot_cpp_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_snapshot_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_snapshot_professional_cpp.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_video_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov12a10_zsl_zoom_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov12a10_zsl_zoom_cpp.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov13850_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_common.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov13850_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_cpp_ds_chromatix.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov13850_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_cpp_hfr_120.so \
@@ -2560,10 +1958,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov7251_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov7251_snapshot.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov7251_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov7251_zsl_preview.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov7251_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov7251_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_a3_default_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_a3_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_a3_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_a3_hfr_90.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_bear_3a_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_bear_3a_default_preview.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_bear_3a_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_bear_3a_default_video.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_bear_3a_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_bear_3a_hfr_120.so \
@@ -2589,24 +1983,52 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_bear_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_bear_snapshot.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_bear_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_bear_zsl_preview.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_bear_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_bear_zsl_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_common.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_cpp_ds_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_cpp_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_cpp_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_cpp_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_cpp_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_cpp_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_cpp_us_chromatix.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_cpp_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_default_video.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_hfr_60.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_hfr_90.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_liveshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_postproc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_snapshot.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_zsl_preview.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_zsl_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_a3_default_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_a3_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_a3_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_a3_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_a3_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_a3_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_common_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_common_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_common_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_common_night.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_common_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_common_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_ds_chromatix.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_engineer_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_engineer_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_snapshot_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_snapshot_custom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_snapshot_custom_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_snapshot_custom_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_snapshot_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_snapshot_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_snapshot_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_snapshot_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_snapshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_snapshot_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_snapshot_hdr_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_snapshot_hdr_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_snapshot_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_snapshot_snight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_snapshot_snight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_us_chromatix.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_video_1080p.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_cpp_video_720p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_cpp_video_720p.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_engineer_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_engineer_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_hdr_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_hdr_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_snapshot_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_snapshot_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_snapshot_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_snight_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_snight_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_zsl_hdr_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_zsl_hdr_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_zsl_preview_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_zsl_preview_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_zsl_preview_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_zsl_preview_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_zsl_snight_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_zsl_snight_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8856_shinetech_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8856_shinetech_zsl_video.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8858_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_a3_default_preview.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8858_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_a3_default_video.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_ov8858_a3_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_a3_hfr_120.so \
@@ -2703,6 +2125,121 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k2l7sx_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k2l7sx_video_4k.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k2l7sx_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k2l7sx_zsl_preview_3a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k2l7sx_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k2l7sx_zsl_video_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_1080p_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_1080p_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_1080p_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_1080p_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_4k_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_4k_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_4k_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_4k_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_VGA_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_VGA_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_default_preview_4ksize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_default_preview_4ksize.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_default_preview_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_default_preview_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_default_video_4ksize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_default_video_4ksize.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_default_video_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_default_video_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_hfr120_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_hfr120_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_hfr60_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_hfr60_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_hfr90_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_hfr90_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_special_16_9_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_special_16_9_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_special_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_special_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_wechat_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_wechat_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_3264x2448.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_3264x2448.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_faceunlock.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_3a_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_4k_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_4k_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_VGA_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_VGA_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_common_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_common_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_common_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_common_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_common_special.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_common_special.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_common_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_common_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_common_zzhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_common_zzhdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_default_video_4ksize_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_default_video_4ksize_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_default_video_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_default_video_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_hfr120_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_hfr120_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_hfr60_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_hfr60_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_hfr90_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_hfr90_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_1080p_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_1080p_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_4k_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_4k_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_VGA_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_VGA_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_default_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_default_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_default_video_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_default_video_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_hfr120_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_hfr120_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_hfr60_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_hfr60_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_hfr90_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_hfr90_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_snapshot_3264x2448.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_snapshot_3264x2448.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_snapshot_3264x2448_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_snapshot_3264x2448_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_snapshot_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_snapshot_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_special_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_special_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_preview_professional_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_preview_professional_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_faceunlock.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_professional_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_isp_zsl_snapshot_professional_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_preview_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_preview_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_preview_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_preview_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_preview_4ksize_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_preview_4ksize_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_preview_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_preview_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_preview_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_preview_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_preview_cpp_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_preview_cpp_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_preview_wechat_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_preview_wechat_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_snapshot_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_snapshot_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_snapshot_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_snapshot_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_res1_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_res1_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_res1_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_res1_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_res1_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_more_snapshot_res1_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_snapshot_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_snapshot_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_snapshot_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_snapshot_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_snapshot_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_snapshot_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_snapshot_res1_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_snapshot_res1_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_snapshot_res1_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_snapshot_res1_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_special_snapshot_res1_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_special_snapshot_res1_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zoom_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zoom_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zoom_preview_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zoom_preview_cpp_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_custom_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_custom_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_custom_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_custom_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_custom_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_custom_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_custom_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_custom_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_face_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_face_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_face_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_face_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_face_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_face_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_flash_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_flash_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_less_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_less_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_preview_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_preview_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp_faceunlock.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_preview_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_preview_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_preview_professional_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_hdr_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_hdr_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_professional_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_professional_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_snapshot_professional_cpp_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_zoom_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_zoom_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l6_ofilm_zsl_zoom_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l6_ofilm_zsl_zoom_cpp_17021.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l8_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l8_common.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l8_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l8_cpp_hfr_120.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3l8_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l8_cpp_hfr_60.so \
@@ -2879,6 +2416,122 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3p8sp_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_postproc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3p8sp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_preview.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k3p8sp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3p8sp_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_1080p_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_1080p_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_1080p_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_1080p_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_4k_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_4k_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_4k_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_4k_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_VGA_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_VGA_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_default_preview_4ksize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_default_preview_4ksize.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_default_preview_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_default_preview_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_default_video_4ksize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_default_video_4ksize.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_default_video_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_default_video_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_hfr120_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_hfr120_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_hfr60_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_hfr60_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_hfr90_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_hfr90_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_special_16_9_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_special_16_9_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_special_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_special_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_wechat_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_wechat_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_zsl_preview_3264x2448.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_zsl_preview_3264x2448.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_zsl_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_zsl_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_zsl_preview_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_zsl_preview_faceunlock.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_zsl_preview_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_zsl_preview_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_zsl_preview_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_zsl_preview_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_zsl_preview_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_zsl_preview_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_zsl_preview_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_3a_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_3a_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_4k_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_4k_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_VGA_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_VGA_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_common_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_common_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_common_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_common_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_common_special.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_common_special.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_common_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_common_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_common_zzhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_common_zzhdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_default_video_4ksize_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_default_video_4ksize_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_default_video_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_default_video_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_hfr120_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_hfr120_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_hfr60_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_hfr60_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_hfr90_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_hfr90_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_1080p_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_1080p_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_4k_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_4k_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_VGA_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_VGA_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_default_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_default_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_default_video_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_default_video_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_hfr120_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_hfr120_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_hfr60_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_hfr60_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_hfr90_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_hfr90_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_snapshot_3264x2448.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_snapshot_3264x2448.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_snapshot_3264x2448_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_snapshot_3264x2448_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_snapshot_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_snapshot_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_special_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_special_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_special_snapshot_420p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_special_snapshot_420p.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_preview_professional_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_preview_professional_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_snapshot_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_snapshot_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_snapshot_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_snapshot_faceunlock.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_snapshot_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_snapshot_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_snapshot_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_snapshot_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_snapshot_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_snapshot_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_snapshot_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_isp_zsl_snapshot_professional_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_isp_zsl_snapshot_professional_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_preview_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_preview_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_preview_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_preview_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_preview_4ksize_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_preview_4ksize_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_preview_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_preview_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_preview_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_preview_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_preview_cpp_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_preview_cpp_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_preview_wechat_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_preview_wechat_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_snapshot_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_snapshot_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_snapshot_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_snapshot_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_more_snapshot_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_more_snapshot_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_more_snapshot_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_more_snapshot_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_more_snapshot_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_more_snapshot_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_more_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_more_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_more_snapshot_res1_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_more_snapshot_res1_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_more_snapshot_res1_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_more_snapshot_res1_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_more_snapshot_res1_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_more_snapshot_res1_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_snapshot_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_snapshot_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_snapshot_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_snapshot_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_snapshot_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_snapshot_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_snapshot_res1_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_snapshot_res1_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_snapshot_res1_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_snapshot_res1_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_special_snapshot_res1_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_special_snapshot_res1_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zoom_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zoom_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zoom_preview_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zoom_preview_cpp_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_custom_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_custom_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_custom_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_custom_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_custom_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_custom_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_custom_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_custom_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_face_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_face_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_face_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_face_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_face_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_face_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_flash_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_flash_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_less_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_less_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_preview_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_preview_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_preview_cpp_faceunlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_preview_cpp_faceunlock.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_preview_cpp_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_preview_cpp_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_preview_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_preview_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_preview_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_preview_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_preview_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_preview_professional_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_fb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_fb.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_hdr_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_hdr_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_professional_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_snapshot_professional_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_snapshot_professional_cpp_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_zoom_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_zoom_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k4h7_zsl_zoom_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h7_zsl_zoom_cpp_17021.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k5e9yu05_mono_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e9yu05_mono_common.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k5e9yu05_mono_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e9yu05_mono_cpp_hfr_120.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k5e9yu05_mono_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e9yu05_mono_cpp_hfr_60.so \
@@ -2898,14 +2551,163 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k5e9yu05_mono_snapshot_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e9yu05_mono_snapshot_isp.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k5e9yu05_mono_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e9yu05_mono_zsl_preview.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5k5e9yu05_mono_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e9yu05_mono_zsl_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_4k_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_4k_preview_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_4k_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_4k_video_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_cpp_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_cpp_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_cpp_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_cpp_liveshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_cpp_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_cpp_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_cpp_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_cpp_video_4k.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_default_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_default_preview_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_default_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_default_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_default_video_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_default_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_default_video_4k.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_hfr_120.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_hfr_120_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_hfr_60.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_hfr_60_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_hfr_60_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_hfr_90.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_hfr_90_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_hfr_90_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_zsl_preview_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_zsl_preview_engineer_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_zsl_preview_engineer_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_largan_2nd_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_largan_2nd_zsl_video_3a.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_1080p_liveshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_1080p_liveshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_1080p_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_1080p_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_1080p_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_1080p_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_4k_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_4k_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_4k_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_4k_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_default_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_default_preview_4ksize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_default_preview_4ksize.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_default_preview_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_default_preview_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_default_video_4ksize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_default_video_4ksize.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_default_video_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_default_video_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_hfr120_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_hfr120_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_hfr240_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_hfr240_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_hfr60_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_hfr60_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_hfr90_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_hfr90_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_special_16_9_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_special_16_9_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_special_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_special_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_wechat_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_wechat_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_3264x2448.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_3264x2448.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_3a_zsl_preview_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_4k_liveshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_4k_liveshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_4k_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_4k_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_720p_liveshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_720p_liveshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_720p_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_720p_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_common.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_common_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_common_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_common_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_common_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_common_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_common_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_common_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_common_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_default_video_4ksize_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_default_video_4ksize_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_default_video_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_default_video_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_hfr120_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_hfr120_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_hfr240_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_hfr240_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_hfr60_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_hfr60_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_hfr90_video_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_hfr90_video_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_1080p_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_1080p_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_4k_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_4k_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_default_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_default_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_default_video_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_default_video_binning.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_hfr120_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_hfr120_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_hfr240_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_hfr240_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_hfr60_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_hfr60_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_hfr90_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_hfr90_video.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_snapshot_3264x2448.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_snapshot_3264x2448.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_snapshot_3264x2448_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_snapshot_3264x2448_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_snapshot_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_snapshot_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_special_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_special_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_video_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_video_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_preview.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_preview_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_preview_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_preview_professional_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_preview_professional_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_professional.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_professional.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_professional_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_professional_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_isp_zsl_snapshot_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_other_liveshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_other_liveshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_postproc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_1080p_16_9_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_1080p_16_9_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_420p_16_9_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_420p_16_9_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_420p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_420p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_4ksize_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_4ksize_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_720p_16_9_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_720p_16_9_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_720p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_720p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_cpp_engineer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_cpp_engineer.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_preview_wechat_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_preview_wechat_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_snapshot_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_snapshot_1080p_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_snapshot_binning_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_snapshot_binning_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_special_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_special_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zoom_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zoom_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zoom_preview_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zoom_preview_cpp_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_custom_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_custom_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_custom_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_custom_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_custom_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_custom_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_custom_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_custom_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_custom_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_custom_cpp_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_face_cpp_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_flash_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_flash_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_less_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_less_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_multiframe_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_multiframe_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_multiframe_face_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_multiframe_face_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_multiframe_face_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_multiframe_face_cpp_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_preview_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_preview_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_preview_cpp_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_preview_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_preview_professional_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_3264x2448_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_3264x2448_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_full_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_full_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_half_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_half_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_hdr_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_hdr_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_low_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_low_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_low_hdr_face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_low_hdr_face.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_panorama.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_portrait.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_cpp_supernight.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_professional_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_professional_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_professional_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_snapshot_professional_cpp_17021.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_zoom_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_zoom_cpp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libchromatix_s5kgm1_xinli_zsl_zoom_cpp_17021.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5kgm1_xinli_zsl_zoom_cpp_17021.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvface_api.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libdepthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdepthmap.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdepthmapwrapper.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libdng_sdkvendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdng_sdkvendor.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpps.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
@@ -2914,7 +2716,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libflash_pmic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_pmic.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libft2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libft2vendor.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgarden.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
@@ -2948,8 +2749,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmialgo_sd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmialgo_sd.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmibokeh_660.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmibokeh_660.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmegface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmegface.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiracast.so \
@@ -2972,7 +2772,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera2_stats_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_lib.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_arcsoftbokeh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_arcsoftbokeh_lib.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_atmel_at24c32e_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_bokeh.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_csidtg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_csidtg.so \
@@ -2986,7 +2785,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_facedetection_lib.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_gc02m0_mono1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_gc02m0_mono1.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_gc2375h.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_gc2375h.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_gc2385.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_gc2385.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_hi846_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi846_sunny.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_hlt_gc2375h_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hlt_gc2375h_eeprom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_hlt_gc2385_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hlt_gc2385_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_hvx_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hvx_add_constant.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_hvx_grid_sum.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hvx_grid_sum.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
@@ -3003,6 +2808,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_imx362_gt24c64a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx362_gt24c64a.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_imx376.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx376.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_imx378.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx378.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_imx386_qtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx386_qtech.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_imx519.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx519.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_irs1645.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_irs1645.so \
@@ -3050,30 +2856,16 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sce40.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_isp_snr47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_snr47.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sub_module.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_gc2375_qtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_gc2375_qtech.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_imx582_qtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_imx582_qtech.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_imx586_qtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_imx586_qtech.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_imx586_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_imx586_sunny.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_ofilm_s5kgd1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_ofilm_s5kgd1_eeprom.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_ov02a10_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_ov02a10_sunny.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_qtech_imx582_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_qtech_imx582_eeprom.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_qtech_imx586_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_qtech_imx586_eeprom.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_qtech_s5k4h7_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_qtech_s5k4h7_eeprom.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_s5k4h7_qtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_s5k4h7_qtech.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_s5k4h7_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_s5k4h7_sunny.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_s5kgd1_ofilm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_s5kgd1_ofilm.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_s5kgd1_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_s5kgd1_sunny.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_sunny_imx586_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_sunny_imx586_eeprom.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_sunny_s5k4h7_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_sunny_s5k4h7_eeprom.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_laurus_sunny_s5kgd1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_laurus_sunny_s5kgd1_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_le2464c_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_le2464c_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_le2464c_master_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_le2464c_master_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_m24c64s_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_m24c64s_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ofilm_ohs0443_ov12a10_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ofilm_ohs0443_ov12a10_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ofilm_ohs0443_ov13880_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ofilm_ohs0443_ov13880_eeprom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ofilm_s5k3l6_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ofilm_s5k3l6_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_onsemi_cat24c16_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_onsemi_cat24c32_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov02a1b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov02a1b.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov12a10.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov12a10.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov13850.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13850.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov13850_q13v06k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13850_q13v06k.so \
@@ -3093,6 +2885,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov8856.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8856.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov8856_2lane.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8856_2lane.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov8856_4lane.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8856_4lane.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov8856_shinetech.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8856_shinetech.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov8858.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8858.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ov8865.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8865.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_paaf_lib.so \
@@ -3102,10 +2895,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_ppeiscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppeiscore.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_qtech_f3l8yam_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_qtech_f5670bq_eeprom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_qtech_imx386_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_qtech_imx386_eeprom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_qtech_ov12a10_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_qtech_ov12a10_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_quadracfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_quadracfa.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k2l7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k2l7.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k2l7sx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k2l7sx.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k3l6_ofilm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l6_ofilm.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k3l8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l8.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k3l8_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l8_mono.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k3m2xm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3m2xm.so \
@@ -3113,7 +2909,12 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k3m3sm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3m3sm.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k3p3sm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3p3sm.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k3p8sp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3p8sp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k4h7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k4h7.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5k5e9yu05.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k5e9yu05.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5kgm1_largan_2nd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5kgm1_largan_2nd.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5kgm1_qiutai_2nd_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5kgm1_qiutai_2nd_eeprom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_s5kgm1_xinli.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5kgm1_xinli.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_shinetech_ov8856_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_shinetech_ov8856_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sony_imx214_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sony_imx214_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sony_imx298_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sony_imx298_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sony_imx378_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sony_imx378_eeprom.so \
@@ -3126,6 +2927,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sunny_gt24c64a_imx376_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_gt24c64a_imx376_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sunny_gt24p64b_imx519_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_gt24p64b_imx519_eeprom.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sunny_hi846_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_hi846_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sunny_ov13855_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_ov13855_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_q13v06k_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_q5v41b_eeprom.so \
@@ -3137,6 +2939,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_truly_cmb433_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_truly_cmb433_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning_lookup.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libmmcamera_xinli_s5kgm1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_xinli_s5kgm1_eeprom.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmlib2d_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmlib2d_interface.so \
@@ -3146,9 +2949,16 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libnnp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnnp.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libocam_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libocam_common.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libois_bu63165.so:$(TARGET_COPY_OUT_VENDOR)/lib/libois_bu63165.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libois_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libois_lc898122.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/liboppo_aisd.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppo_aisd.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/liboppo_log_print.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppo_log_print.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/liboppo_platform_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppo_platform_hwi.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/liboppoalgolib.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppoalgolib.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/liboppocamalgo_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppocamalgo_daemon.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr.so \
@@ -3187,23 +2997,38 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_dsp_domains_v2.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libsnpeml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpeml.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_registry_skel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libst_personblur.so:$(TARGET_COPY_OUT_VENDOR)/lib/libst_personblur.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libst_segmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libst_segmentation.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libstblur_capture_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstblur_capture_api.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libstface_fd_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstface_fd_api.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libstface_seg_ocl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstface_seg_ocl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libstfaceunlockocl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstfaceunlockocl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libswresample.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswresample.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libswscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswscale.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-cpu.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsymphonypower.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynergy_loc_api.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/libthread_blur.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthread_blur.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libwfdaac_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdaac_vendor.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcodecv4l2_proprietary.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
@@ -3230,13 +3055,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/libxtwifi_server_protocol.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtwifi_server_protocol.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/libxtwifi_server_protocol_uri_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtwifi_server_protocol_uri_v3.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/mibokeh_660_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/lib/mibokeh_660_opencl.bin \
-    vendor/realme/RMX1911/proprietary/vendor/lib/miwatermark.so:$(TARGET_COPY_OUT_VENDOR)/lib/miwatermark.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_HD.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libVC1Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1Dec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1DecDsp_skel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
@@ -3246,7 +3071,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/rfsa/adsp/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res.bin \
     vendor/realme/RMX1911/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
@@ -3255,6 +3079,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.3.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.oppo.hardware.biometrics.face@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.biometrics.face@1.0.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.commondcs@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.hypnus@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.oppo.hardware.radio.opporadio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.radio.opporadio@1.0.so \
@@ -3266,13 +3092,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@3.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.gnss@4.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@4.0-service.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.gnss@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@4.0.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.camera.device@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@3.2.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccsyshal@1.0.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/realme/RMX1911/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
@@ -3283,14 +3109,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/android.frameworks.fingerprintservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.fingerprintservice@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-external.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/android.hardware.sensors@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.0-impl.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/camera.device@3.4-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-external-impl.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/camera.device@3.5-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-external-impl.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
@@ -3307,10 +3125,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/audio.primary.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.trinket.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
@@ -3319,6 +3137,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
@@ -3338,6 +3157,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libDxHdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDxHdcp.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
@@ -3356,11 +3176,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxSwVencMpeg4.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libOppoAPSMemMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOppoAPSMemMgr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libOppoAlgoClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOppoAlgoClient.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRbsFlow.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libSubSystemShutdown.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSubSystemShutdown.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libVDBlurlessAPI_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDBlurlessAPI_v2.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
@@ -3371,6 +3194,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libalipay_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalipay_factory.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libarcsoft_hdr_denoise_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_denoise_api.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_hdr.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libarcsoft_smart_denoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_smart_denoise.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1cper.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crtx.so \
@@ -3382,6 +3209,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw.so \
@@ -3436,6 +3264,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libmegface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmegface.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libmegvii_superiq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmegvii_superiq.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
@@ -3452,6 +3282,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_algo.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_bg_pca_algo.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_nr_fusion.so \
@@ -3459,6 +3290,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemaids_vendor.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/liboppo_log_print.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboppo_log_print.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/liboppoalgolib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboppoalgolib.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
@@ -3528,11 +3361,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_registry_skel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/libstface_fd_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstface_fd_api.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
@@ -3554,6 +3389,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
@@ -3563,6 +3400,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.commondcs@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.hypnus@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so \
@@ -3580,8 +3418,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
-    vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@3.2.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
@@ -3591,6 +3427,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
@@ -3620,6 +3457,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
+    vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
     vendor/realme/RMX1911/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
