@@ -64,91 +64,6 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.api@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.api@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.api@1.1",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.api@1.1.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.constants@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.constants@2.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@2.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.constants@2.1",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@2.1.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	product_specific: true,
-}
-
 android_app_import {
 	name: "CACertService",
 	owner: "realme",
@@ -164,17 +79,6 @@ android_app_import {
 	name: "CneApp",
 	owner: "realme",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "IWlanService",
-	owner: "realme",
-	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -271,18 +175,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "dpmserviceapp",
-	owner: "realme",
-	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "ims",
 	owner: "realme",
 	apk: "proprietary/product/priv-app/ims/ims.apk",
@@ -321,6 +213,18 @@ android_app_import {
 	name: "WfdService",
 	owner: "realme",
 	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "realme",
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
