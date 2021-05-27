@@ -169,9 +169,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service \
     vendor/realme/r5x/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
-    vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.face@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.face@1.0-service \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service \
-    vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.oppo.hardware.ktv@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.ktv@1.0-service \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
@@ -450,9 +448,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/realme/r5x/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/realme/r5x/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
-    vendor/realme/r5x/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.face@1.0-service.rc \
     vendor/realme/r5x/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc \
-    vendor/realme/r5x/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service.rc \
     vendor/realme/r5x/proprietary/vendor/etc/init/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service.rc \
     vendor/realme/r5x/proprietary/vendor/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc \
     vendor/realme/r5x/proprietary/vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-sscrpc-service.rc \
@@ -474,7 +470,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
     vendor/realme/r5x/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     vendor/realme/r5x/proprietary/vendor/etc/lm/GameOptimizationFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/GameOptimizationFeature.xml \
-    vendor/realme/r5x/proprietary/vendor/etc/permissions/vendor-oppo-hardware.biometrics.fingerprintpay.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-oppo-hardware.biometrics.fingerprintpay.xml \
     vendor/realme/r5x/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/realme/r5x/proprietary/vendor/etc/qdcm_calib_data_ili9881h_hdp_video_truly_auo_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ili9881h_hdp_video_truly_auo_panel.xml \
     vendor/realme/r5x/proprietary/vendor/etc/qdcm_calib_data_nt36525b_hdp_video_hlt_boe_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36525b_hdp_video_hlt_boe_panel.xml \
@@ -596,7 +591,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/firmware/tp/19631/nt_hlt_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/19631/nt_hlt_fw.bin \
     vendor/realme/r5x/proprietary/vendor/firmware/tp/19631/nt_hlt_fw_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/19631/nt_hlt_fw_mp.bin \
     vendor/realme/r5x/proprietary/vendor/firmware/tp/19631/nt_hlt_fw_signed.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/19631/nt_hlt_fw_signed.bin \
-    vendor/realme/r5x/proprietary/vendor/lib/android.frameworks.faceservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.faceservice@1.0.so \
     vendor/realme/r5x/proprietary/vendor/lib/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-external.so \
     vendor/realme/r5x/proprietary/vendor/lib/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-legacy.so \
     vendor/realme/r5x/proprietary/vendor/lib/android.hardware.sensors@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0-impl.so \
@@ -3076,7 +3070,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
     vendor/realme/r5x/proprietary/vendor/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.3.so \
     vendor/realme/r5x/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
-    vendor/realme/r5x/proprietary/vendor/lib/vendor.oppo.hardware.biometrics.face@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.biometrics.face@1.0.so \
     vendor/realme/r5x/proprietary/vendor/lib/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so \
     vendor/realme/r5x/proprietary/vendor/lib/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so \
     vendor/realme/r5x/proprietary/vendor/lib/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.commondcs@1.0.so \
@@ -3434,7 +3427,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
     vendor/realme/r5x/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
     vendor/realme/r5x/proprietary/vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so \
-    vendor/realme/r5x/proprietary/vendor/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so \
     vendor/realme/r5x/proprietary/vendor/lib64/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so \
     vendor/realme/r5x/proprietary/vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.commondcs@1.0.so \
     vendor/realme/r5x/proprietary/vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.hypnus@1.0.so \
