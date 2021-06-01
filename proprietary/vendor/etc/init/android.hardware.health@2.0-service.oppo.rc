@@ -1,0 +1,8 @@
+service vendor.health-hal-2-0 /vendor/bin/hw/android.hardware.health@2.0-service.oppo
+    class hal
+    user root
+    group system
+    file /dev/kmsg w
+#ifdef ODM_WT_EDIT
+#/* Bin2.Zhang@ODM_WT.BSP.Charger.Basic.1941873, 20200407, Add new empty line end of this file for vendor.health-hal-2-0 */
+#endif /* ODM_WT_EDIT */
