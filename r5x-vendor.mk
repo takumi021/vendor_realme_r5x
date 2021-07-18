@@ -572,6 +572,15 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
     vendor/realme/r5x/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/realme/r5x/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/realme/r5x/proprietary/vendor/firmware/egista.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/egista.b00 \
+    vendor/realme/r5x/proprietary/vendor/firmware/egista.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/egista.b01 \
+    vendor/realme/r5x/proprietary/vendor/firmware/egista.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/egista.b02 \
+    vendor/realme/r5x/proprietary/vendor/firmware/egista.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/egista.b03 \
+    vendor/realme/r5x/proprietary/vendor/firmware/egista.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/egista.b04 \
+    vendor/realme/r5x/proprietary/vendor/firmware/egista.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/egista.b05 \
+    vendor/realme/r5x/proprietary/vendor/firmware/egista.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/egista.b06 \
+    vendor/realme/r5x/proprietary/vendor/firmware/egista.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/egista.b07 \
+    vendor/realme/r5x/proprietary/vendor/firmware/egista.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/egista.mdt \
     vendor/realme/r5x/proprietary/vendor/firmware/f_1511.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b00 \
     vendor/realme/r5x/proprietary/vendor/firmware/f_1511.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b01 \
     vendor/realme/r5x/proprietary/vendor/firmware/f_1511.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/f_1511.b02 \
