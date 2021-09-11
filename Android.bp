@@ -89,6 +89,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "pasrservice",
+	owner: "realme",
+	apk: "proprietary/vendor/app/pasrservice/pasrservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "PowerOffAlarm",
 	owner: "realme",
 	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
@@ -220,6 +231,24 @@ dex_import {
 }
 
 dex_import {
+	name: "QPerformance",
+	owner: "realme",
+	jars: ["proprietary/system/framework/QPerformance.jar"],
+}
+
+dex_import {
+	name: "QXPerformance",
+	owner: "realme",
+	jars: ["proprietary/system/framework/QXPerformance.jar"],
+}
+
+dex_import {
+	name: "UxPerformance",
+	owner: "realme",
+	jars: ["proprietary/system/framework/UxPerformance.jar"],
+}
+
+dex_import {
 	name: "com.qti.snapdragon.sdk.display",
 	owner: "realme",
 	jars: ["proprietary/product/framework/com.qti.snapdragon.sdk.display.jar"],
@@ -239,6 +268,24 @@ prebuilt_etc_xml {
 	name: "vendor.qti.gnss@4.0-service",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.hardware.servicetracker@1.2-service",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.memory.pasrmanager@1.0-service",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager@1.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
