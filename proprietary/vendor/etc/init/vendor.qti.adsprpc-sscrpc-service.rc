@@ -36,15 +36,22 @@ service vendor.adsprpcd /vendor/bin/adsprpcd
    user system
    group media
 
+#ifndef OPLUS_BUG_COMPATIBILITY
+#lijiangMULTIMEDIA.AUDIODRIVER.ADSP,2020/10/10, modify for VTS test
+#service vendor.adsprpcd_audiopd /vendor/bin/adsprpcd audiopd
+#   class main
+#   user media
+#   group media
+#else
 service vendor.adsprpcd_audiopd /vendor/bin/adsprpcd audiopd
    class main
    user media
    group media
+   setenv ADSP_LIBRARY_PATH ;/odm/lib/rfsa/adsp;/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp;/vendor/dsp
+#endif /* OPLUS_BUG_COMPATIBILITY */
+
 
 service vendor.adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
    class core
    user system
    group system
-
-on property:vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
-   stop vendor.adsprpcd_sensorspd
