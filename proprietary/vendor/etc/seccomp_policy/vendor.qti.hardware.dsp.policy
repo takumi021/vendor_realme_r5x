@@ -30,7 +30,10 @@ fstat: 1
 readlinkat: 1
 newfstatat: 1
 mremap: 1
+#ifdef OPLUS_BUG_COMPATIBILITY
+#lijiangMULTIMEDIA.AUDIODRIVER.ADSP,2020/10/10, add for VTS test
 clock_gettime: 1
+#endif /* OPLUS_BUG_COMPATIBILITY */
 pread64: 1
 fstatfs: 1
 rt_sigaction: 1
@@ -61,4 +64,3 @@ gettid: 1
 setpriority: 1
 prctl: 1
 write: 1
-madvise: 1
