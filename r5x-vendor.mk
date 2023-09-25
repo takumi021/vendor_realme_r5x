@@ -139,6 +139,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service \
+    vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service-rbs:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service-rbs \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/realme/r5x/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
@@ -198,77 +199,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/etc/acdbdata/19631/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/19631/workspaceFile.qwsp \
     vendor/realme/r5x/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/realme/r5x/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/M_Attribute_Gender_Age_1.0.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_Gender_Age_1.0.model \
     vendor/realme/r5x/proprietary/vendor/etc/camera/arc_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arc_golden.bin \
     vendor/realme/r5x/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
     vendor/realme/r5x/proprietary/vendor/etc/camera/attribute.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/attribute.model \
     vendor/realme/r5x/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
     vendor/realme/r5x/proprietary/vendor/etc/camera/cameraconfig.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraconfig.txt \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/000.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/000_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/001.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/001_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/002.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/002_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/003.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/003_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/010.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/010_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/011.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/011_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/012.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/012_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/013.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/013.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/100.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/100_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/101.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/101_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/102.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/102_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/103.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/103_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/110.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/110_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/111.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/111_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/112.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/112_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/113.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/113.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/200.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/200_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/201.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/201_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/202.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/202_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/203.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/203_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/210.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/210_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/211.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/211_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212_pre.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/213.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/PreCalVarBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreCalVarBinary.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/PreHighPassBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHighPassBinary.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/PreHoriFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHoriFilterBinary.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/PreMakeupBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMakeupBinary.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/PreMorphBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMorphBinary.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/PreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreOnlywhitenBinary.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/PreSkintuneBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreSkintuneBinary.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/PreVertFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreVertFilterBinary.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/eyeBright.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/skin_CCT.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_CCT.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/skin_back.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_back.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/skin_dark.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_dark.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/skin_indian.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_indian.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/skin_normal.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_normal.png \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/skinmask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.bin \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/fb_model/skinmask.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.png \
     vendor/realme/r5x/proprietary/vendor/etc/camera/gc02m0_mono1_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gc02m0_mono1_chromatix.xml \
     vendor/realme/r5x/proprietary/vendor/etc/camera/gc2375h_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gc2375h_chromatix.xml \
     vendor/realme/r5x/proprietary/vendor/etc/camera/gc2385_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gc2385_chromatix.xml \
-    vendor/realme/r5x/proprietary/vendor/etc/camera/gender_smile_race_mask_MTNet_2.1.1.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gender_smile_race_mask_MTNet_2.1.1.model \
     vendor/realme/r5x/proprietary/vendor/etc/camera/hi846_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hi846_sunny_chromatix.xml \
     vendor/realme/r5x/proprietary/vendor/etc/camera/imx386_qtech_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx386_qtech_chromatix.xml \
     vendor/realme/r5x/proprietary/vendor/etc/camera/imx386_qtech_monets_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx386_qtech_monets_chromatix.xml \
